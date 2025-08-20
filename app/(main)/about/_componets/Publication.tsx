@@ -228,9 +228,9 @@ export default function PublicationViewer({
               <span className="mr-3 text-gray-700">Share:</span>
               <div className="flex space-x-2">
                 <a
-                  href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(
-                    typeof window !== "undefined" ? window.location.href : ""
-                  )}&t=${encodeURIComponent(title)}`}
+                  href={
+                    "https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A3000%2Fabout&..."
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors"
@@ -245,11 +245,9 @@ export default function PublicationViewer({
                   </svg>
                 </a>
                 <a
-                  href={`https://twitter.com/share?text=${encodeURIComponent(
-                    title
-                  )}&url=${encodeURIComponent(
-                    typeof window !== "undefined" ? window.location.href : ""
-                  )}`}
+                  href={
+                    "https://twitter.com/share?text=Custom%20Publication%20Title&url=http%3A%2F%2..."
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-400 text-white hover:bg-blue-500 transition-colors"
@@ -264,11 +262,9 @@ export default function PublicationViewer({
                   </svg>
                 </a>
                 <a
-                  href={`mailto:?subject=${encodeURIComponent(
-                    title
-                  )}&body=Check out this publication: ${encodeURIComponent(
-                    typeof window !== "undefined" ? window.location.href : ""
-                  )}`}
+                  href={
+                    "https://mailto.com/share?text=Custom%20Publication%20Title&url=http%3A%2F%2..."
+                  }
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600 text-white hover:bg-gray-700 transition-colors"
                   aria-label="Share via Email"
                 >
