@@ -224,6 +224,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimonials Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-16 text-[var(--seczim-brown)]">
+              Testimonials
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  name: "James Mutiwekuziva",
+                  position: "CEO, Zimbabwe Stock Exchange",
+                  content:
+                    "The SEC Zimbabwe has been instrumental in maintaining market integrity and fostering investor confidence in our financial markets.",
+                },
+                {
+                  name: "Linda Chiwenga",
+                  position: "Investment Manager",
+                  content:
+                    "Their regulatory framework provides the necessary protection for investors while enabling businesses to raise capital efficiently.",
+                },
+                {
+                  name: "Dr. Tinashe Mupfuriri",
+                  position: "Economic Analyst",
+                  content:
+                    "The Commission's efforts in financial education have significantly improved market participation and understanding.",
+                },
+              ].map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-[var(--seczim-gray-light)] p-6 rounded-lg"
+                >
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                    <div>
+                      <h3 className="font-semibold text-[var(--seczim-brown)]">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        {testimonial.position}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600">"{testimonial.content}"</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Form Section */}
         <section className="py-20 bg-[var(--seczim-gray-light)]">
           <div className="container mx-auto px-6">
@@ -297,56 +347,6 @@ export default function Home() {
                   </Button>
                 </form>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-16 text-[var(--seczim-brown)]">
-              Testimonials
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "James Mutiwekuziva",
-                  position: "CEO, Zimbabwe Stock Exchange",
-                  content:
-                    "The SEC Zimbabwe has been instrumental in maintaining market integrity and fostering investor confidence in our financial markets.",
-                },
-                {
-                  name: "Linda Chiwenga",
-                  position: "Investment Manager",
-                  content:
-                    "Their regulatory framework provides the necessary protection for investors while enabling businesses to raise capital efficiently.",
-                },
-                {
-                  name: "Dr. Tinashe Mupfuriri",
-                  position: "Economic Analyst",
-                  content:
-                    "The Commission's efforts in financial education have significantly improved market participation and understanding.",
-                },
-              ].map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="bg-[var(--seczim-gray-light)] p-6 rounded-lg"
-                >
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-                    <div>
-                      <h3 className="font-semibold text-[var(--seczim-brown)]">
-                        {testimonial.name}
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        {testimonial.position}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600">"{testimonial.content}"</p>
-                </div>
-              ))}
             </div>
           </div>
         </section>

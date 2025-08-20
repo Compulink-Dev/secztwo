@@ -131,3 +131,8 @@
     --seczim-gray-dark: #333333;
   }
 }
+
+
+.container {
+  @apply px-8
+}

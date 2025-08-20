@@ -47,7 +47,7 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--seczim-brown)] text-[var(--seczim-white)]">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 pt-16 pb-8">
+      <div className="container mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
