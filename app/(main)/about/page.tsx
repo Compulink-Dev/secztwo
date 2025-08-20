@@ -1,13 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import AnimatedText from "@/components/AnimatedText";
 
 export default function AboutPage() {
   return (
     <>
-      <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-32 flex items-center justify-center bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)] overflow-hidden">
@@ -149,7 +146,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

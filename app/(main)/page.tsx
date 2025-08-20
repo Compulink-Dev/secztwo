@@ -1,14 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="min-h-screen">
         {/* Hero Section with Breadcrumb */}
         <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)] overflow-hidden">
@@ -41,7 +38,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-[var(--seczim-white)] text-[var(--seczim-white)] hover:bg-[var(--seczim-brown-accent)] hover:text-[var(--seczim-brown)] hover:border-[var(--seczim-brown-accent)] font-bold px-8 py-4"
+                  className="border-[var(--seczim-white)] text-amber-700 hover:bg-[var(--seczim-brown-accent)] hover:text-[var(--seczim-brown)] hover:border-[var(--seczim-brown-accent)] font-bold px-8 py-4"
                 >
                   Contact Us
                 </Button>
@@ -193,7 +190,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[var(--seczim-brown)]"
+                className="border-white text-amber-800 hover:text-white hover:bg-[var(--seczim-brown)]"
               >
                 View All Projects
               </Button>
@@ -354,7 +351,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

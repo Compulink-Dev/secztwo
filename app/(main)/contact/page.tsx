@@ -6,8 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import AnimatedText from "@/components/AnimatedText";
 
 // Zod schema for form validation
@@ -44,7 +42,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative py-32 flex items-center justify-center bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)] overflow-hidden">
@@ -239,7 +236,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
