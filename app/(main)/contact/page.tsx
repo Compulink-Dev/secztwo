@@ -47,7 +47,7 @@ export default function ContactPage() {
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-32 flex items-center justify-center bg-gradient-to-br from-blue-900 to-blue-600 text-white">
+        <section className="relative py-32 flex items-center justify-center bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)] overflow-hidden">
           <div className="container mx-auto px-6 text-center">
             <AnimatedText
               text="Contact Us"
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold mb-6 text-blue-900">
+                <h2 className="text-3xl font-bold mb-6 text-amber-900">
                   Send Us a Message
                 </h2>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -175,12 +175,12 @@ export default function ContactPage() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold mb-6 text-blue-900">
+                <h2 className="text-3xl font-bold mb-6 text-amber-900">
                   Contact Information
                 </h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                    <h3 className="text-xl font-semibold mb-2 text-amber-800">
                       Head Office
                     </h3>
                     <p className="text-gray-700">
@@ -195,21 +195,21 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                    <h3 className="text-xl font-semibold mb-2 text-amber-800">
                       Phone
                     </h3>
                     <p className="text-gray-700">+263 242 774 456 / 774 457</p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                    <h3 className="text-xl font-semibold mb-2 text-amber-800">
                       Email
                     </h3>
                     <p className="text-gray-700">info@seczim.co.zw</p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-blue-800">
+                    <h3 className="text-xl font-semibold mb-2 text-amber-800">
                       Operating Hours
                     </h3>
                     <p className="text-gray-700">
@@ -227,12 +227,12 @@ export default function ContactPage() {
         {/* Map Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-16 text-blue-900">
+            <h2 className="text-3xl font-bold text-center mb-16 text-amber-900">
               Our Location
             </h2>
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
               {/* Embedded Google Map would go here */}
-              <div className="w-full h-full flex items-center justify-center bg-blue-100">
+              <div className="w-full h-full flex items-center justify-center bg-amber-100">
                 <span className="text-2xl">📍 Map of SECZIM Location</span>
               </div>
             </div>
