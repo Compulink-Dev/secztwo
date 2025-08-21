@@ -9,9 +9,6 @@ export default function Home() {
       <main className="min-h-screen">
         {/* Hero Section with Breadcrumb */}
         <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)] overflow-hidden">
-          {/* Background image would go here */}
-          <div className="absolute inset-0 bg-opacity-70 bg-[var(--seczim-brown)]"></div>
-
           <div className="container mx-auto px-6 text-left relative z-10">
             <div className="max-w-4xl">
               <AnimatedText

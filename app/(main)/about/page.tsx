@@ -23,7 +23,6 @@ export default function Home() {
       <main className="d">
         {/* Hero Section */}
         <section className="relative py-32 flex items-center justify-center  bg-gradient-to-br from-[var(--seczim-brown)] to-[var(--seczim-brown-light)] text-[var(--seczim-white)]">
-          <div className="absolute inset-0 bg-black/50"></div>
           <div className="container mx-auto px-6 relative z-10 flex h-full items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
