@@ -57,7 +57,13 @@ export default function Header() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
+                  <NavigationMenuTrigger
+                    className={
+                      !isScrolled
+                        ? `bg-transparent text-white`
+                        : "text-amber-950 bg-transparent"
+                    }
+                  >
                     About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -92,7 +98,13 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="">
-                  <NavigationMenuTrigger className="bg-transparent">
+                  <NavigationMenuTrigger
+                    className={
+                      !isScrolled
+                        ? `bg-transparent text-white`
+                        : "text-amber-950 bg-transparent"
+                    }
+                  >
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -112,17 +124,35 @@ export default function Header() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem
+                  className={
+                    !isScrolled
+                      ? `bg-transparent text-white`
+                      : "text-amber-950 bg-transparent"
+                  }
+                >
                   <Button variant="ghost" asChild>
                     <a href="#">Markets</a>
                   </Button>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem
+                  className={
+                    !isScrolled
+                      ? `bg-transparent text-white`
+                      : "text-amber-950 bg-transparent"
+                  }
+                >
                   <Button variant="ghost" asChild>
                     <a href="#">Publications</a>
                   </Button>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem
+                  className={
+                    !isScrolled
+                      ? `bg-transparent text-white`
+                      : "text-amber-950 bg-transparent"
+                  }
+                >
                   <Button variant="ghost" asChild>
                     <a href="/contact">Contact</a>
                   </Button>
@@ -190,7 +220,7 @@ export default function Header() {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden border-t"
             >
-              <div className="container py-4 space-y-4">
+              <div className="container py-4 space-y-4 ">
                 <div className="grid gap-2">
                   <Button variant="ghost" className="justify-start">
                     About
