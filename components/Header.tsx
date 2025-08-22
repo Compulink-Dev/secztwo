@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { useAppStore } from "@/lib/store";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Header() {
@@ -23,6 +23,8 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const { isMenuOpen, toggleMenu, closeMenu } = useAppStore();
+
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -212,29 +214,65 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
+        {/* Mobile Menu */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t"
+              className="md:hidden border-t bg-amber-50"
             >
               <div className="container py-4 space-y-4 ">
                 <div className="grid gap-2">
-                  <Button variant="ghost" className="justify-start">
+                  <Button
+                    variant="ghost"
+                    className="justify-start"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      router.push("/about");
+                    }}
+                  >
                     About
                   </Button>
-                  <Button variant="ghost" className="justify-start">
+                  <Button
+                    variant="ghost"
+                    className="justify-start"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      router.push("/services");
+                    }}
+                  >
                     Services
                   </Button>
-                  <Button variant="ghost" className="justify-start">
+                  <Button
+                    variant="ghost"
+                    className="justify-start"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      router.push("/markets");
+                    }}
+                  >
                     Markets
                   </Button>
-                  <Button variant="ghost" className="justify-start">
+                  <Button
+                    variant="ghost"
+                    className="justify-start"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      router.push("/publications");
+                    }}
+                  >
                     Publications
                   </Button>
-                  <Button variant="ghost" className="justify-start">
+                  <Button
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      router.push("/contact");
+                    }}
+                    variant="ghost"
+                    className="justify-start"
+                  >
                     Contact
                   </Button>
                 </div>
